@@ -3,13 +3,14 @@ import { BrowserRouter, Route, Routes, Link,} from "react-router-dom";
 import { NotFound }  from "./components/not_found";
 import { Home } from "./components/Home";
 import Login from "./Login";
+import  Form  from "./components/Form";
 
 function App() {
   return (
     <>
     <BrowserRouter>
     <div>
-       
+    <Login/>
       <h1>Premier League Squear</h1>
       <menu>
         <li><Link to="/">Home</Link></li>
@@ -72,7 +73,7 @@ function MCI(){
     <>
     <h2>Manchester City</h2>
     <p>記事画面です</p>
-    <Login/>
+    <Form />
     </>
   )
 }
