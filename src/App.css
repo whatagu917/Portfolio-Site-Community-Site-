@@ -21,3 +21,44 @@ body {
 img {
     border-radius: 50%;
 }
+
+/* ヘッダーのスタイル */
+h1 {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* メニューのリンクスタイル */
+menu {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  menu li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.team-title {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
