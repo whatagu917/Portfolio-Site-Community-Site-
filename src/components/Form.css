@@ -1,12 +1,98 @@
+/* Form.css */
 .container {
-    margin: 40px;
-  }
-  
-  .spacer {
-    margin-top: 10px;
-  }
-  
-  button {
-    margin-left: 170px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* ビューポートの高さに合わせる */
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* コンテナ内で余白を埋めるために使用 */
+}
+
+.Form h1 {
+font-size: 24px;
+margin: 0 0 20px;
+text-align: center;
+}
+
+.Form button {
+  width: auto;
+  display: inline-block;
+  white-space: nowrap;
+  height: 100%; 
+  line-height: 1;
+}
+
+.Form input[type="text"] {
+width: 100%;
+padding: 10px;
+margin: 0 0 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.Form ul {
+list-style: none;
+padding: 0;
+}
+
+.Form .sendMessage{
+display: flex;
+align-items: center;
+}
+
+.Form li div {
+display: flex;
+flex-direction: column;
+}
+
+.Form li {
+display: flex;
+align-items: center;
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 10px;
+margin: 10px 0;
+}
+
+
+.Form img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.Form .comment-text {
+font-size: 20px; /* コメントのフォントサイズを大きくする */
+color: #333; /* コメントのテキストカラーを変更 */
+background-color: #fff; /* コメントの背景色を白に変更 */
+border: 1px solid #ccc; /* コメントの枠のスタイルを変更 */
+padding: 12px; /* コメントの内側の余白を調整 */
+margin-bottom: 10px; /* コメントの下部のマージンを追加 */
+border-radius: 8px; /* コメントの枠の角を丸くする */
+}
+
+.Form .comment-text:hover {
+background-color: #f0f0f0; /* ホバー時の背景色を変更 */
+}
+
+.Form .timestamp {
+font-size: 12px; /* ユーザーネームとタイムスタンプのフォントサイズを小さくする */
+color: #888; /* ユーザーネームとタイムスタンプのテキストカラーを変更 */
+}
+.Form p {
+margin: 0;
+}
+
+.Form div {
+flex: 1;
+font-size: 16px; /* テキストのフォントサイズを調整 */
+color: #333; /* テキストのカラーを変更 */
+}

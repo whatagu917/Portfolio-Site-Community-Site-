@@ -1,13 +1,12 @@
 import React from 'react';
+import './Home.css';
 
 export class Home extends React.Component {
-
-    render(){
-        return(
-            <>
-            <h2>Home</h2>
-            <p>ホーム画面です</p>
-            </>
-        )
+    render() {
+        return (
+            <div className="centered-text">
+                <p>Premier League Squearへようこそ！</p>
+            </div>
+        );
     }
 }

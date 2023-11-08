@@ -59,7 +59,7 @@ function Form() {
     const trimmedText = inputText.trim();
     if (trimmedText || imageUrl) {
       const db = getFirestore(app);
-      const commentCollection = collection(db, "comments");
+      const commentCollection = collection(db, "comments2");
 
       try {
         const newComment = {
@@ -86,7 +86,7 @@ function Form() {
 
   const deleteCommentFromDatabase = async (commentId) => {
     const db = getFirestore(app);
-    const commentCollection = collection(db, "comments");
+    const commentCollection = collection(db, "comments2");
 
     try {
       await deleteDoc(doc(commentCollection, commentId));
@@ -140,7 +140,7 @@ function Form() {
 
   const fetchComments = async () => {
     const db = getFirestore(app);
-    const commentCollection = collection(db, "comments");
+    const commentCollection = collection(db, "comments2");
     const commentQuery = query(commentCollection, orderBy("timestamp", "desc"));
 
     try {

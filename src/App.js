@@ -4,6 +4,26 @@ import { NotFound }  from "./components/not_found";
 import { Home } from "./components/Home";
 import Login from "./Login";
 import  Form  from "./components/Form";
+import  Form2  from "./components/Form2";
+import  Form3  from "./components/Form3";
+import  Form4  from "./components/Form4";
+import  Form5  from "./components/Form5";
+import  Form6  from "./components/Form6";
+import  Form7  from "./components/Form7";
+import  Form8  from "./components/Form8";
+import  Form9  from "./components/Form9";
+import  Form10  from "./components/Form10";
+import  Form11  from "./components/Form11";
+import  Form12  from "./components/Form12";
+import  Form13  from "./components/Form13";
+import  Form14  from "./components/Form14";
+import  Form15  from "./components/Form15";
+import  Form16  from "./components/Form16";
+import  Form17  from "./components/Form17";
+import  Form18  from "./components/Form18";
+import  Form19  from "./components/Form19";
+import  Form20  from "./components/Form20";
+
 
 function App() {
   return (
@@ -39,7 +59,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='*' element={<NotFound />} />
         <Route path='/MCI' element={<MCI />} />
-        <Route path='/ARS' element={<ARS />} />
+        <Route path='/ARA' element={<ARA />} />
         <Route path='/MUN' element={<MUN />} />
         <Route path='/NEW' element={<NEW />} />
         <Route path='/LIV' element={<LIV />} />
@@ -71,42 +91,41 @@ function App() {
 function MCI(){
   return(
     <>
-    <h2>Manchester City</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Manchester City</h2>
     <Form />
     </>
   )
 }
 
-function ARS(){
+function ARA(){
   return(
     <>
-    <h2>Arsenal</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Arsenal</h2>
+    <Form2 />
     </>
   )
 }
 function NEW(){
   return(
     <>
-    <h2>NewCastle United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Newcastle United</h2>
+    <Form3 />
     </>
   )
 }
 function BHA(){
   return(
     <>
-    <h2>Brighton</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Brighton</h2>
+    <Form4 />
     </>
   )
 }
 function AVL(){
   return(
     <>
-    <h2>Aston Villa</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Aston Villa</h2>
+    <Form5 />
     </>
   )
 }
@@ -114,8 +133,8 @@ function AVL(){
 function BRE(){
   return(
     <>
-    <h2>Brentford</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Brentford</h2>
+    <Form6 />
     </>
   )
 }
@@ -123,107 +142,107 @@ function BRE(){
 function BOU(){
   return(
     <>
-    <h2>Brighton</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Bournemouth</h2>
+    <Form7 />
     </>
   )
 }
 function MUN(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Manchester United</h2>
+    <Form8 />
     </>
   )
 }
 function NFO(){
   return(
     <>
-    <h2>Brighton</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Nottingham Forest</h2>
+    <Form9 />
     </>
   )
 }
 function BUR(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Burnley</h2>
+    <Form10 />
     </>
   )
 }function CHE(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Chealsea</h2>
+    <Form11 />
     </>
   )
 }function CRY(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Crystal Palace</h2>
+    <Form12 />
     </>
   )
 }function EVE(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Everton</h2>
+    <Form13 />
     </>
   )
 }function FUL(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Fulham</h2>
+    <Form14 />
     </>
   )
 }function LIV(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Liverpool</h2>
+    <Form15 />
     </>
   )
 }
 function LUT(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Luton Town</h2>
+    <Form16 />
     </>
   )
 }
 function SHU(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Sheffield United</h2>
+    <Form17 />
     </>
   )
 }
 function TOT(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Tottenham Hotspur</h2>
+    <Form18 />
     </>
   )
 }
 function WHU(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">West Ham United</h2>
+    <Form19 />
     </>
   )
 }
 function WOL(){
   return(
     <>
-    <h2>Manchester United</h2>
-    <p>記事画面です</p>
+    <h2 className="team-title">Wolverhampton Wanderers</h2>
+    <Form20 />
     </>
   )
 }
